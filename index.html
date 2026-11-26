@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anyella RankoonDibujante e ilustradora</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <input class="carrito-check" type="checkbox" id="c-plushie">
+  <input class="carrito-check" type="checkbox" id="c-llaveros">
+  <input class="carrito-check" type="checkbox" id="c-soporte">
+  <input class="carrito-check" type="checkbox" id="c-alfombrilla">
+  <input class="carrito-check" type="checkbox" id="c-stickers">
+  <input class="carrito-check" type="checkbox" id="c-prints">
+  <input class="carrito-check" type="checkbox" id="c-cajita-mini">
+  <input class="carrito-check" type="checkbox" id="c-cajita-mediana">
+  <input class="carrito-check" type="checkbox" id="c-cajita-grande">
+
+  <header class="encabezado">
+    <a class="logo" href="#inicio">
+      <img src="AnyellaRankoon_Logo.png" alt="Anyella Rankoon-dibujante e ilustradora" style="width: 100%; height: 60px; object-fit: cover;">
+    </a>
+    <nav class="menu">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#yo">Yo</a></li>
+        <li><a href="#Productos">Productos</a></li>
+        <li><a href="#cajas">Cajas sorpresa</a></li>
+        <li><a href="#comisiones">Comisiones</a></li>
+        <li><a class="destacado" href="#carrito">Carrito (<span class="contador"></span>)</a></li>
+        <li><a class="destacado" href="index.html">Salir</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="pagina" id="login">
+    <section class="nosotros">
+      <figure class="col2">
+        <img src="Anyella.jpeg" alt="Ilustración de Anyella Rankoon">
+      </figure>
+
+      <article class="col2 contacto">
+        <form class="sesion" action="#tienda">
+          <h2>Iniciar sesión</h2>
+          <p class="aviso">Bienvenido a la tienda de Anyella Rankoon</p>
+
+          <label for="usuario">Correo</label>
+          <input type="email" id="usuario" placeholder="tucorreo@ejemplo.com" required>
+
+          <label for="clave">Contraseña</label>
+          <input type="password" id="clave" placeholder="Tu contraseña" required>
+
+          <button type="submit">Entrar</button>
+
+          <p class="aviso">¿No tienes cuenta? <a href="#tienda">Entrar como invitado</a></p>
+        </form>
+      </article>
+    </section>
+  </div>
+
+  <main class="pagina" id="tienda">
+    <section class="nosotros" id="inicio">
+      <article class="col2">
+        <h1>Bienvenidos</h1>
+        <h3>Anyella Rankoon · dibujante e ilustradora</h3>
+        <p>Soy ilustradora y dibujante de personajes, también he desarrollado kits de marcas para empresas pequeñas.</p>
+        <p>Descubre más de mi persona en "Yo" y mira mis proyectos en "Mis trabajos".</p>
+        <a class="boton" href="#menu">Ver productos</a>
+        <a class="boton" href="#comisiones">Pedir una comisión</a>
+      </article>
+      <figure class="col2">
+        <img src="Anyella.jpeg" alt="Ilustración de Anyella Rankoon">
+      </figure>
+    </section>
+
+    <section class="nosotros" id="yo">
+      <figure class="col2">
+        <img src="Foto_creadora.jpeg" alt="Angela Enríquez">
+      </figure>
+      <article class="col2">
+        <h2>Sobre mí</h2>
+        <p>Mi nombre es Angela Enríquez, tengo 20 años, mis animales favoritos son los mapaches y los gatos. Me gusta dibujar e ilustrar elementos gráficos.</p>
+        <p>Actualmente estoy culminando el 3er nivel de Multimedia y Producción Audiovisual, en el cual he desarrollado kits de marcas para proyectos reales y personales; también cortos audiovisuales pequeños en los cuales fui guionista y directora.</p>
+        <a class="boton" href="#trabajos">Ver mis trabajos</a>
+        <a class="boton" href="#contacto">Escríbeme</a>
+      </article>
+    </section>
+
+    <section class="servicios" id="servicios">
+      <h2 class="titulo-seccion">¿Qué hago?</h2>
+
+      <article class="tarjeta">
+        <img src="Ilustracion.jpg" alt="Ilustraciones">
+        <h3>Ilustraciones</h3>
+        <p>Personajes e ilustraciones digitales con mi estilo propio.</p>
+      </article>
+
+      <article class="tarjeta">
+        <img src="dibujo1.jpg" alt="Dibujos">
+        <h3>Dibujos</h3>
+        <p>Dibujos que convierto en productos: stickers, llaveros y más.</p>
+      </article>
+
+      <article class="tarjeta">
+        <img src="Comisiones.jpg" alt="Comisiones">
+        <h3>Comisiones</h3>
+        <p>Dibujos personalizados y kits de marca hechos a tu medida.</p>
+      </article>
+    </section>
+
+    <section class="portafolio" id="trabajos">
+      <h2 class="titulo-seccion">Mis trabajos</h2>
+
+      <figure class="col2">
+        <iframe src="Kit_de_marca.pdf" title="Kits de marca"></iframe>
+        <h3>Kits de marca</h3>
+        <a class="boton" href="Kit_de_marca.pdf" target="_blank">Abrir PDF</a>
+      </figure>
+
+      <figure class="col2">
+        <iframe src="Posts.pdf" title="Posts"></iframe>
+        <h3>Posts</h3>
+        <a class="boton" href="Posts.pdf" target="_blank">Abrir PDF</a>
+      </figure>
+    </section>
+
+    <section class="galeria" id="galeria">
+      <h2 class="titulo-seccion">Galería</h2>
+      <figure class="foto"><a href="#ver1"><img src="dibujo2.jpg" alt="Dibujo 2 de Anyella Rankoon"></a></figure>
+      <figure class="foto"><a href="#ver2"><img src="dibujo3.png" alt="Dibujo 3 de Anyella Rankoon"></a></figure>
+      <figure class="foto"><a href="#ver3"><img src="dibujo4.png" alt="Dibujo 4 de Anyella Rankoon"></a></figure>
+      <figure class="foto"><a href="#ver4"><img src="dibujo%205.png" alt="Dibujo 5 de Anyella Rankoon"></a></figure>
+      <figure class="foto"><a href="#ver5"><img src="dibujo6.png" alt="Dibujo 6 de Anyella Rankoon"></a></figure>
+      <figure class="foto"><a href="#ver6"><img src="dibujo7.png" alt="Dibujo 7 de Anyella Rankoon"></a></figure>
+    </section>
+
+    <div class="visor" id="ver1">
+      <a class="boton cerrar" href="#galeria">Cerrar</a>
+      <img src="dibujo2.jpg" alt="Dibujo 2 de Anyella Rankoon"><br>
+      <a class="boton flecha" href="#ver6">Anterior</a>
+      <a class="boton flecha" href="#ver2">Siguiente</a>
+    </div>
+
+    <div class="visor" id="ver2">
+      <a class="boton cerrar" href="#galeria">Cerrar</a>
+      <img src="dibujo3.png" alt="Dibujo 3 de Anyella Rankoon"><br>
+      <a class="boton flecha" href="#ver1">Anterior</a>
+      <a class="boton flecha" href="#ver3">Siguiente →</a>
+    </div>
+
+    <div class="visor" id="ver3">
+      <a class="boton cerrar" href="#galeria">Cerrar</a>
+      <img src="dibujo4.png" alt="Dibujo 4 de Anyella Rankoon"><br>
+      <a class="boton flecha" href="#ver2">Anterior</a>
+      <a class="boton flecha" href="#ver4">Siguiente</a>
+    </div>
+
+    <div class="visor" id="ver4">
+      <a class="boton cerrar" href="#galeria">Cerrar</a>
+      <img src="dibujo%205.png" alt="Dibujo 5 de Anyella Rankoon"><br>
+      <a class="boton flecha" href="#ver3">Anterior</a>
+      <a class="boton flecha" href="#ver5">Siguiente</a>
+    </div>
+
+    <div class="visor" id="ver5">
+      <a class="boton cerrar" href="#galeria">Cerrar</a>
+      <img src="dibujo6.png" alt="Dibujo 6 de Anyella Rankoon"><br>
+      <a class="boton flecha" href="#ver4">Anterior</a>
+      <a class="boton flecha" href="#ver6">Siguiente</a>
+    </div>
+
+    <div class="visor" id="ver6">
+      <a class="boton cerrar" href="#galeria">Cerrar</a>
+      <img src="dibujo7.png" alt="Dibujo 7 de Anyella Rankoon"><br>
+      <a class="boton flecha" href="#ver5">Anterior</a>
+      <a class="boton flecha" href="#ver1">Siguiente</a>
+    </div>
+
+    <section class="servicios" id="menu">
+      <h2 class="titulo-seccion">Menú de productos</h2>
+
+      <article class="tarjeta">
+        <img src="plushie.png" alt="Plushie">
+        <h3>Plushie</h3>
+        <p class="precio">$23 USD</p>
+        <a class="boton" href="#pago-plushie">Comprar</a>
+        <label class="boton" for="c-plushie"><span class="agregar">Al carrito</span><span class="quitar">En el carrito</span></label>
+      </article>
+
+      <article class="tarjeta">
+        <img src="llavero_acrilico.png" alt="Llaveros acrílicos">
+        <h3>Llaveros acrílicos</h3>
+        <p class="precio">$14 USD</p>
+        <a class="boton" href="#pago-llaveros">Comprar</a>
+        <label class="boton" for="c-llaveros"><span class="agregar">Al carrito</span><span class="quitar">En el carrito</span></label>
+      </article>
+
+      <article class="tarjeta">
+        <img src="soporte_acrilico.png" alt="Soporte acrílico">
+        <h3>Soporte acrílico</h3>
+        <p class="precio">$15 USD</p>
+        <a class="boton" href="#pago-soporte">Comprar</a>
+        <label class="boton" for="c-soporte"><span class="agregar">Al carrito</span><span class="quitar">En el carrito</span></label>
+      </article>
+
+      <article class="tarjeta">
+        <img src="alfombrilla_mouse.png" alt="Alfombrilla para mouse">
+        <h3>Alfombrilla para mouse</h3>
+        <p class="precio">$15 USD</p>
+        <a class="boton" href="#pago-alfombrilla">Comprar</a>
+        <label class="boton" for="c-alfombrilla"><span class="agregar">Al carrito</span><span class="quitar">En el carrito</span></label>
+      </article>
+
+      <article class="tarjeta">
+        <img src="stickers.png" alt="Stickers">
+        <h3>Stickers</h3>
+        <p class="precio">$5 USD</p>
+        <a class="boton" href="#pago-stickers">Comprar</a>
+        <label class="boton" for="c-stickers"><span class="agregar">Al carrito</span><span class="quitar">En el carrito</span></label>
+      </article>
+
+      <article class="tarjeta">
+        <img src="print.png" alt="Prints">
+        <h3>Prints</h3>
+        <p class="precio">$7 USD</p>
+        <a class="boton" href="#pago-prints">Comprar</a>
+        <label class="boton" for="c-prints"><span class="agregar">Al carrito</span><span class="quitar">En el carrito</span></label>
+      </article>
+    </section>
+
+    <section class="slider" id="cajitas">
+      <h2 class="titulo-seccion">Cajas sorpresa</h2>
+
+      <input type="radio" name="slider" id="s1" checked>
+      <input type="radio" name="slider" id="s2">
+      <input type="radio" name="slider" id="s3">
+
+      <figure class="slide slide1">
+        <label for="s2"><img src="dibujo1.jpg" alt="Cajita sorpresa mini"></label>
+        <figcaption>
+          <h2>Cajita mini · $8 USD</h2>
+          <p>Ticket con 3 productos aleatorios de mi tienda.</p>
+          <a class="boton" href="#pago-cajita-mini">Comprar</a>
+          <label class="boton" for="c-cajita-mini"><span class="agregar">Al carrito</span><span class="quitar">✓ En el carrito</span></label>
+        </figcaption>
+      </figure>
+
+      <figure class="slide slide2">
+        <label for="s3"><img src="llavero_acrilico.png" alt="Cajita sorpresa mediana"></label>
+        <figcaption>
+          <h2>Cajita mediana · $16 USD</h2>
+          <p>Ticket con 5 productos aleatorios de mi tienda.</p>
+          <a class="boton" href="#pago-cajita-mediana">Comprar</a>
+          <label class="boton" for="c-cajita-mediana"><span class="agregar">Al carrito</span><span class="quitar">✓ En el carrito</span></label>
+        </figcaption>
+      </figure>
+
+      <figure class="slide slide3">
+        <label for="s1"><img src="cajita%20grande.jpg" alt="Cajita sorpresa grande"></label>
+        <figcaption>
+          <h2>Cajita grande · $25 USD</h2>
+          <p>Ticket con 8 productos aleatorios y un dibujo exclusivo.</p>
+          <a class="boton" href="#pago-cajita-grande">Comprar</a>
+          <label class="boton" for="c-cajita-grande"><span class="agregar">Al carrito</span><span class="quitar">✓ En el carrito</span></label>
+        </figcaption>
+      </figure>
+
+      <nav class="puntos">
+        <label for="s1"></label>
+        <label for="s2"></label>
+        <label for="s3"></label>
+      </nav>
+    </section>
+
+    <section class="servicios" id="comisiones">
+      <h2 class="titulo-seccion">Comisiones personalizadas</h2>
+
+      <article class="tarjeta">
+        <span class="icono">1</span>
+        <h3>Boceto</h3>
+        <p>Dibujo a línea de tu personaje o idea.</p>
+        <p class="precio">Desde $5 USD</p>
+        <a class="boton" href="#pedido">Pedir</a>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono">2</span>
+        <h3>Ilustración a color</h3>
+        <p>Ilustración completa con color y fondo sencillo.</p>
+        <p class="precio">Desde $15 USD</p>
+        <a class="boton" href="#pedido">Pedir</a>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono">3</span>
+        <h3>Kit de marca</h3>
+        <p>Logo, colores y tipografías para tu emprendimiento.</p>
+        <p class="precio">Desde $30 USD</p>
+        <a class="boton" href="#pedido">Pedir</a>
+      </article>
+    </section>
+
+    <section class="contacto" id="pedido">
+      <h2 class="titulo-seccion">Haz tu pedido</h2>
+      <form action="#confirmacion">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre">
+
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" placeholder="tucorreo@ejemplo.com">
+
+        <label for="producto">¿Qué deseas pedir?</label>
+        <input type="text" id="producto" placeholder="Producto, cajita sorpresa o comisión">
+
+        <label for="fecha-pedido">Fecha de pedido</label>
+        <input type="date" id="fecha-pedido">
+
+        <label for="fecha-entrega">Fecha de entrega</label>
+        <input type="date" id="fecha-entrega">
+
+        <label for="mensaje">Detalles</label>
+        <textarea id="mensaje" rows="4" placeholder="Cuéntame tu idea..."></textarea>
+
+        <button type="submit">Enviar pedido</button>
+      </form>
+    </section>
+
+    <section class="llamado">
+      <h2>¿Tienes una idea en mente?</h2>
+      <p>Escríbeme y te respondo lo antes posible.</p>
+      <a class="boton" href="#pedido">Hacer un pedido</a>
+      <a class="boton" href="#trabajos">Ver mis trabajos</a>
+    </section>
+  </main>
+
+  <div class="pagina" id="carrito">
+    <section>
+      <div class="carrito">
+        <p><a class="boton regresar" href="#menu"> Seguir comprando</a></p>
+        <h2 class="titulo-seccion">Tu carrito</h2>
+
+        <div class="vacio">
+          <h3>Tu carrito está vacío</h3>
+          <p>Elige tus productos en la tienda con el botón "Al carrito".</p>
+          <a class="boton" href="#menu">Ir a la tienda</a>
+        </div>
+
+        <article class="carrito-item item-plushie">
+          <img src="plushie.png" alt="Plushie">
+          <div class="carrito-info">
+            <h3>Plushie</h3>
+            <p>Cantidad: 1</p>
+            <p class="precio">$23 USD</p>
+            <label class="boton" for="c-plushie">Quitar</label>
+          </div>
+        </article>
+
+        <article class="carrito-item item-llaveros">
+          <img src="llavero_acrilico.png" alt="Llaveros acrílicos">
+          <div class="carrito-info">
+            <h3>Llaveros acrílicos</h3>
+            <p>Cantidad: 1</p>
+            <p class="precio">$14 USD</p>
+            <label class="boton" for="c-llaveros">Quitar</label>
+          </div>
+        </article>
+
+        <article class="carrito-item item-soporte">
+          <img src="soporte_acrilico.png" alt="Soporte acrílico">
+          <div class="carrito-info">
+            <h3>Soporte acrílico</h3>
+            <p>Cantidad: 1</p>
+            <p class="precio">$15 USD</p>
+            <label class="boton" for="c-soporte">Quitar</label>
+          </div>
+        </article>
+
+        <article class="carrito-item item-alfombrilla">
+          <img src="alfombrilla_mouse.png" alt="Alfombrilla para mouse">
+          <div class="carrito-info">
+            <h3>Alfombrilla para mouse</h3>
+            <p>Cantidad: 1</p>
+            <p class="precio">$15 USD</p>
+            <label class="boton" for="c-alfombrilla">Quitar</label>
+          </div>
+        </article>
+
+        <article class="carrito-item item-stickers">
+          <img src="stickers.png" alt="Stickers">
+          <div class="carrito-info">
+            <h3>Stickers</h3>
+            <p>Cantidad: 1</p>
+            <p class="precio">$5 USD</p>
+            <label class="boton" for="c-stickers">Quitar</label>
+          </div>
+        </article>
+
+        <article class="carrito-item item-prints">
+          <img src="print.png" alt="Prints">
+          <div class="carrito-info">
+            <h3>Prints</h3>
+            <p>Cantidad: 1</p>
+            <p class="precio">$7 USD</p>
+            <label class="boton" for="c-prints">Quitar</label>
+          </div>
+        </article>
+
+        <article class="carrito-item item-cajita-mini">
+          <img src="dibujo1.jpg" alt="Cajita sorpresa mini">
+          <div class="carrito-info">
+            <h3>Cajita sorpresa mini</h3>
+            <p>Cantidad: 1</p>
+            <p class="precio">$8 USD</p>
+            <label class="boton" for="c-cajita-mini">Quitar</label>
+          </div>
+        </article>
+
+        <article class="carrito-item item-cajita-mediana">
+          <img src="llavero_acrilico.png" alt="Cajita sorpresa mediana">
+          <div class="carrito-info">
+            <h3>Cajita sorpresa mediana</h3>
+            <p>Cantidad: 1</p>
+            <p class="precio">$16 USD</p>
+            <label class="boton" for="c-cajita-mediana">Quitar</label>
+          </div>
+        </article>
+
+        <article class="carrito-item item-cajita-grande">
+          <img src="cajita%20grande.jpg" alt="Cajita sorpresa grande">
+          <div class="carrito-info">
+            <h3>Cajita sorpresa grande</h3>
+            <p>Cantidad: 1</p>
+            <p class="precio">$25 USD</p>
+            <label class="boton" for="c-cajita-grande">Quitar</label>
+          </div>
+        </article>
+
+        <div class="total">
+          <h3>Total: <span class="suma"></span></h3>
+          <a class="boton" href="#menu">Seguir comprando</a>
+          <a class="boton" href="#pago-carrito">Pagar ahora</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="pagina" id="pagar">
+    <section>
+
+      <p><a class="boton regresar" href="#menu">Volver a la tienda</a></p>
+
+      <article class="col2">
+        <div class="resumen-caja">
+          <h2>Tu compra</h2>
+
+          <div class="resumen" id="pago-plushie">
+            <img src="plushie.png" alt="Plushie">
+            <h3>Plushie</h3>
+            <p class="monto">Total: $23</p>
+          </div>
+
+          <div class="resumen" id="pago-llaveros">
+            <img src="llavero_acrilico.png" alt="Llaveros acrílicos">
+            <h3>Llaveros acrílicos</h3>
+            <p class="monto">Total: $14</p>
+          </div>
+
+          <div class="resumen" id="pago-soporte">
+            <img src="soporte_acrilico.png" alt="Soporte acrílico">
+            <h3>Soporte acrílico</h3>
+            <p class="monto">Total: $15</p>
+          </div>
+
+          <div class="resumen" id="pago-alfombrilla">
+            <img src="alfombrilla_mouse.png" alt="Alfombrilla para mouse">
+            <h3>Alfombrilla para mouse</h3>
+            <p class="monto">Total: $15</p>
+          </div>
+
+          <div class="resumen" id="pago-stickers">
+            <img src="stickers.png" alt="Stickers">
+            <h3>Stickers</h3>
+            <p class="monto">Total: $5</p>
+          </div>
+
+          <div class="resumen" id="pago-prints">
+            <img src="print.png" alt="Prints">
+            <h3>Prints</h3>
+            <p class="monto">Total: $7</p>
+          </div>
+
+          <div class="resumen" id="pago-cajita-mini">
+            <img src="dibujo1.jpg" alt="Cajita mini">
+            <h3>Cajita sorpresa mini</h3>
+            <p class="monto">Total: $8</p>
+          </div>
+
+          <div class="resumen" id="pago-cajita-mediana">
+            <img src="llavero_acrilico.png" alt="Cajita mediana">
+            <h3>Cajita sorpresa mediana</h3>
+            <p class="monto">Total: $16</p>
+          </div>
+
+          <div class="resumen" id="pago-cajita-grande">
+            <img src="cajita%20grande.jpg" alt="Cajita grande">
+            <h3>Cajita sorpresa grande</h3>
+            <p class="monto">Total: $25</p>
+          </div>
+
+          <div class="resumen" id="pago-carrito">
+            <h3>Productos del carrito</h3>
+            <p class="linea item-plushie">Plushie · $23</p>
+            <p class="linea item-llaveros">Llaveros acrílicos · $14</p>
+            <p class="linea item-soporte">Soporte acrílico · $15</p>
+            <p class="linea item-alfombrilla">Alfombrilla para mouse · $15</p>
+            <p class="linea item-stickers">Stickers · $5</p>
+            <p class="linea item-prints">Prints · $7</p>
+            <p class="linea item-cajita-mini">Cajita sorpresa mini · $8</p>
+            <p class="linea item-cajita-mediana">Cajita sorpresa mediana · $16</p>
+            <p class="linea item-cajita-grande">Cajita sorpresa grande · $25</p>
+            <p class="monto">Total: <span class="suma"></span></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="col2 contacto">
+        <form action="#confirmacion">
+          <h2>Detalles de su tarjeta</h2>
+
+          <label for="titular">Nombre del titular</label>
+          <input type="text" id="titular" placeholder="Como aparece en la tarjeta" required>
+
+          <label for="tarjeta">Número de tarjeta</label>
+          <input type="text" id="tarjeta" placeholder="0000 0000 0000 0000" required>
+
+          <div class="mitad">
+            <label for="mes">Mes</label>
+            <input type="text" id="mes" placeholder="MM" required>
+          </div><div class="mitad">
+            <label for="anio">Año</label>
+            <input type="text" id="anio" placeholder="YYYY" required>
+          </div>
+
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" placeholder="123" required>
+
+          <label for="direccion">Dirección de envío</label>
+          <input type="text" id="direccion" placeholder="Ciudad, calle y número" required>
+
+          <button type="submit">Pagar con tarjeta de crédito</button>
+          <button type="submit">Pagar con tarjeta de débito</button>
+        </form>
+      </article>
+    </section>
+  </div>
+
+  <div class="pagina" id="confirmacion">
+    <section class="nosotros">
+      <article class="col2">
+        <h1>Gracias por tu compra</h1>
+        <h3>¡Compra realizada con éxito!</h3>
+        <p>Recibí tu pedido. Te escribiré a tu correo para confirmar los detalles y la fecha de entrega.</p>
+        <a class="boton" href="#inicio">Volver al inicio</a>
+        <a class="boton" href="#menu">Seguir comprando</a>
+      </article>
+      <figure class="col2">
+        <img src="Anyella.jpeg" alt="Ilustración de Anyella Rankoon">
+      </figure>
+    </section>
+  </div>
+
+  <footer class="pie" id="contacto">
+    <section class="pie-col">
+      <h3>Anyella Rankoon</h3>
+      <p>Dibujante e ilustradora</p>
+    </section>
+    <nav class="pie-col">
+      <h3>Redes sociales</h3>
+      <a href="https://www.instagram.com/bluerankoon?gwpx=MTU3dWxvZGViZHlrNw==" target="_blank">Instagram</a><br>
+      <a href="https://www.facebook.com/profile.php?id=61572687112550" target="_blank">Facebook</a><br>
+      <a href="https://x.com/geilink80629" target="_blank">X</a>
+    </nav>
+    <section class="pie-col">
+      <h3>Contacto</h3>
+      <p>enriquezangelaabigail@gmail.com<br>095 952 2882</p>
+    </section>
+    <p class="derechos">© 2026 Anyella Rankoon. Todos los derechos reservados.</p>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/593959522882?text=Hola%20Anyella" target="_blank">WhatsApp</a>
+
+</body>
+</html>
